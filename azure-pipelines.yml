@@ -44,7 +44,7 @@ stages:
         scriptLocation: 'inlineScript'
         inlineScript: |
           az container create
-                   --resource-group aks-test-eastus 
+                   -g $(resourceGroup)
                    --name theophilushashdockermavensample 
                    --image $(acrLoginServer)/theophilushashdockermavensample:$(Build.BuildId)
                    --cpu 1 --memory 1
