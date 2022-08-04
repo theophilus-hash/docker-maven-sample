@@ -42,4 +42,4 @@ stages:
        azureSubscription: 'Visual Studio Enterprise Subscription(2fe416be-868a-4de9-9c05-cad961ec9d3a)'
        scriptType: 'pscore'
        scriptLocation: 'inlineScript'
-       inlineScript: '''az container create -g $(resourceGroup) --name theophilushashdockermavensample --image $(acrLoginServer)/theophilushashdockermavensample:$(Build.BuildId) --cpu 1 --memory 1 --registry-login-server $(acrLoginServer) --registry-username $(acrName) --registry-password $(acrPassword) --dns-name-label theophilushashdockermavensample --ports 80'''
+       inlineScript: '''az container create -g $(resourceGroup) --name theophilushashdockermavensamplee--image $(acrLoginServer)/theophilushashdockermavensample:$(Build.BuildId) --cpu 1 --memory 1 --registry-login-server $(acrLoginServer) --registry-username $(acrName) --registry-password $(acrPassword) --dns-name-label theophilushashdockermavensample --ports 80'''
