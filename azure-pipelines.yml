@@ -42,4 +42,4 @@ stages:
         azureSubscription: 'Visual Studio Enterprise Subscription(2fe416be-868a-4de9-9c05-cad961ec9d3a)'
         scriptType: 'bash'
         scriptLocation: 'inlineScript'
-        inlineScript: '''az container create -g $(resourceGroup) --name theophilushashdockermavensample --image ehimemen.azurecr.io/theophilushashdockermavensample:latest --registry-password $(acrPassword)'
+        inlineScript: '''az container create -g $(resourceGroup) --name theophilushashdockermavensample --image ehimemen.azurecr.io/theophilushashdockermavensample:latest --registry-password $(acrPassword)'''
